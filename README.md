@@ -1,0 +1,2 @@
+# sciquo
+Sciquo project workspace
