@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+  This file is the entry for ALL routes, including /preview/* canvas iframes.
+  Fonts are loaded here as non-blocking links so fallback fonts render immediately.
+-->
+<html lang="en" style="height: 100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+    <meta property="og:title" content="Mockup Canvas" />
+    <meta property="og:description" content="UI prototyping sandbox with infinite canvas" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mockup Canvas" />
+    <meta name="twitter:description" content="UI prototyping sandbox with infinite canvas" />
+
+    <title>Mockup Canvas</title>
+  </head>
+  <body
+    style="height: 100%; margin: 0"
+    onload="const s=document.createElement('scr' + 'ipt'); s.type='module'; s.src='/src/main.tsx'; document.body.appendChild(s);"
+  >
+    <div id="root" style="height: 100%"></div>
+  </body>
+</html>
